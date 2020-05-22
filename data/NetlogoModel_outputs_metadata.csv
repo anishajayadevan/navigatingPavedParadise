@@ -1,0 +1,13 @@
+Output File,Description
+modelComplete.txt,A file to indicate if the model is complete (all iterations and runs after iterations are complete). Delete to run from the beginning
+movementCoordinates.csv,CSV containing coordinates of each new step of individuals. 
+transientStatus.csv,"CSV containing status of each transient (dead/settled, number of steps moved, dispersal distance). "
+agentLocations.csv,CSV containing locations of agents that have reached the boundary of a tile. These agents will be loaded in the iterative runs after N iterations. Agents are loaded only if their coordinates are within the extent of the tile
+residentStatus.csv,"CSV containing status of each resident (number of steps moved, home range radius). "
+CompletedIterAndTileNum.csv,CSV containing completed tile number and iteration number
+completedTileNums.csv,CSV containing completed tile number and run number (for iterative runs after N iterations)
+<Species>output_numCrossing_Itn<iterationNum>_Tile< tileNumber>,"Raster of a tile, with each pixel containing number of crossings in 1 iteration"
+<Species>output_numIndividuals_Itn<iterationNum>_Tile< tileNumber>,"Raster of a tile, with each pixel containing number of individuals in 1 iteration"
+movementCoordinates_afterN_<iterationNum>_<tileNum>.csv,CSV containing coordinates of each new step of individuals that had reached a boundary of a tile. 
+transientStatus_afterN_<iterationNum>_<tileNum>.csv,"CSV containing status of each transient (dead/settled, number of steps moved, dispersal distance), for transients that had reached a boundary of a tile."
+residentStatus_afterN_<iterationNum>_<tileNum>.csv,"CSV containing status of each resident (number of steps moved, home range radius) for residents that had reached a boundary of a tile"

@@ -1,0 +1,19 @@
+Input,Description
+TimeSteps,Number of time steps controls transient and resident movement and is derived from the dispersal distance (see manuscript and appendix for more details)
+numIterations,Number of iterations that the model runs for
+resolution,Resolution of raster files
+completedIterAndTileNumFileName,Name for csv file containing the numbers of processed tiles and completed iterations
+projectionFile,Path to a .prj file
+hPopM,Slope of the curve fitting the movement probabilities for movement in different human population categories (see manuscript and appendix for more details)
+hPopC,Intercept of the curve fitting the movement probabilities for movement in different human population categories (see manuscript and appendix for more details)
+Species,Name of the species
+numTilesFile,Path to ‘tileNum lulc.csv’ generated in split_layers_for_netlogo.R
+startingPtTilesLocation,Path to folder containing starting point tiles generated in split_layers_for_netlogo.R
+rasterTilesLocation,Path to folder containing raster tiles generated in split_layers_for_netlogo.R
+vectorTilesLocation,Path to folder containing vector tiles generated in split_layers_for_netlogo.R
+outputDirectory,Path to output directory for model outputs. Create subfolders for each species in this directory. Example code contains the path to the Sloth Bear subfolder
+movementProbFile,Path to the csv file containing movement probabilities. See sample csv uploaded in sample input data
+minDispDist,Minimum dispersal distance (kilometers) of a given species
+maxDispDist,Maximum dispersal distance (kilometers) of a given species
+minHomeRange,Minimum home range area (hectares) of a given species
+maxHomeRange,Maximum home range area (hectares) of a given species
